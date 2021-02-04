@@ -15,7 +15,7 @@ displayWeather = (place) => {
                // settings weather condition
                document.getElementById('weather-condition').innerHTML = data.weather[0].main;
                // setting weather icon
-               let icon = 'http://openweathermap.org/img/wn/' + data.weather[0].icon + '.png';
+               let icon = 'https://openweathermap.org/img/wn/' + data.weather[0].icon + '.png';
                document.getElementById('weather-icon').setAttribute('src', icon);
 
           })
