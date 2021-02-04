@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Temperature Hot</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+        body {
+            background: url(images/bg-image-day.jpg) no-repeat center center fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form class="col-md-6 m-auto py-5">
+            <div class="input-group mb-3">
+                <input id="input-location" type="text" class="form-control" placeholder="Enter location">
+                <div class="input-group-append">
+                    <button id="search-btn" type="button" class="btn btn-dark">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="weather-status text-white text-center">
+            <img id="weather-icon" width="90px" alt="weather-icon">
+            <h1 id="location-name"></h1>
+            <h3><span id="weather-temp"></span>&deg;C</h3>
+            <h2 id="weather-condition" class="lead"></h2>
+        </div>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
