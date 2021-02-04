@@ -1,3 +1,4 @@
+document.body.style.background = "url('images/bg-image-day.jpg') no-repeat center center fixed";
 
 document.getElementById("search-btn").addEventListener("click", function () {
      let locationName = document.getElementById("input-location").value;
@@ -17,7 +18,12 @@ displayWeather = (place) => {
                // setting weather icon
                let icon = 'https://openweathermap.org/img/wn/' + data.weather[0].icon + '.png';
                document.getElementById('weather-icon').setAttribute('src', icon);
-
+               // setting bg-image depending on time
+               let hours = new Date();
+               console.log(hours)
+               if (hours >= 18 || (hours >= 0 && hours <= 5)) {
+                    document.body.style.background = "url('images/bg-image-night.jpg') no-repeat center center fixed";
+               }
           })
 }
 
