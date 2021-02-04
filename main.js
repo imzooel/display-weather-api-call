@@ -5,7 +5,7 @@ document.getElementById("search-btn").addEventListener("click", function () {
 })
 
 displayWeather = (place) => {
-     fetch("http://api.openweathermap.org/data/2.5/weather?q=" + place + "&units=metric&appid=bad4ca22b01b704d0f3031119644e5b5")
+     fetch("https://api.openweathermap.org/data/2.5/weather?q=" + place + "&units=metric&appid=bad4ca22b01b704d0f3031119644e5b5")
           .then(response => response.json())
           .then(data => {
                // setting the location name
