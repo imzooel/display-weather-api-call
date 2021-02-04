@@ -10,7 +10,7 @@ displayWeather = (place) => {
           .then(response => response.json())
           .then(data => {
                // setting the location name
-               document.getElementById('location-name').innerText = data.name;
+               document.getElementById('location-name').innerText = data.name || "Unknown Location!";
                // setting weather temperature
                document.getElementById('weather-temp').innerText = data.main.temp;
                // settings weather condition
